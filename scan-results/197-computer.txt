@@ -1,0 +1,32 @@
+# Device Scan Results (x.x.x.x)
+# Command: nmap -p- -sV -sC x.x.x.x
+# Date: [REDACTED]
+
+Starting Nmap 7.97 ( https://nmap.org )
+Nmap scan report for [DEVICE-4] (x.x.x.x)
+Host is up (latency redacted).
+Not shown: 65534 closed tcp ports (conn-refused)
+
+PORT     STATE SERVICE VERSION
+5000/tcp open  upnp    UPnP service
+
+Service detection performed. Please report any incorrect results.
+Nmap done: 1 IP address (1 host up) scanned in [REDACTED] seconds
+
+# Device Analysis:
+# - Generic computer with UPnP service exposed
+# - Very fast response time suggests local network interface
+# - UPnP service likely for media sharing or device discovery
+# - Could be related to screen sharing or file sharing
+
+# Security Assessment:
+# - UPnP service exposed to local network
+# - Port 5000 commonly used for various services
+# - Low security risk in home network environment
+# - Service likely legitimate OS functionality
+
+# Recommendations:
+# - Review sharing settings
+# - Disable unnecessary sharing services if not needed
+# - Monitor for unexpected network connections
+# - Ensure OS is updated to latest version 

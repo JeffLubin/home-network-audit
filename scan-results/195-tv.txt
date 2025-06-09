@@ -1,0 +1,33 @@
+# Device Scan Results (x.x.x.x)
+# Command: nmap -p- -sV -sC x.x.x.x
+# Date: [REDACTED]
+
+Starting Nmap 7.97 ( https://nmap.org )
+Nmap scan report for [DEVICE-3] (x.x.x.x)
+Host is up (latency redacted).
+Not shown: 65532 closed tcp ports (conn-refused)
+
+PORT      STATE SERVICE  VERSION
+5000/tcp  open  upnp     UPnP service
+49152/tcp open  unknown  Unknown service
+49153/tcp open  unknown  Unknown service
+
+Service detection performed. Please report any incorrect results.
+Nmap done: 1 IP address (1 host up) scanned in [REDACTED] seconds
+
+# Service Analysis:
+# - UPnP (Universal Plug and Play) service exposed on port 5000
+# - Two high-numbered ports (49152, 49153) with unknown services
+# - Likely related to media streaming and device discovery protocols
+# - Device appears to be advertising services for media sharing/casting
+
+# Security Concerns:
+# - UPnP services can be exploited for DDoS amplification attacks
+# - Unknown services on high ports may expose device management interfaces
+# - No authentication visible on exposed services
+# - Device may be discoverable by other network clients
+
+# Recommendations:
+# - Disable UPnP if not needed
+# - Review device's network settings for unnecessary services
+# - Consider placing device on isolated VLAN 

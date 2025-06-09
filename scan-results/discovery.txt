@@ -1,0 +1,33 @@
+# Network Discovery Scan Results
+# Command: nmap -sn x.x.x.x/24
+# Date: [REDACTED]
+
+Starting Nmap 7.97 ( https://nmap.org )
+Nmap scan report for [DEVICE-7] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-1] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-2] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-3] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-4] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-5] (x.x.x.x)
+Host is up (latency redacted).
+
+Nmap scan report for [DEVICE-6] (x.x.x.x)
+Host is up (latency redacted).
+
+# Additional devices found with no open ports:
+# x.x.x.x - [DEVICE-8]
+# x.x.x.x - [DEVICE-9]
+# x.x.x.x - [DEVICE-10]
+# x.x.x.x - [DEVICE-11]
+
+Nmap done: 11 IP addresses (11 hosts up) scanned in [REDACTED] seconds 

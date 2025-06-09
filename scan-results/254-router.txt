@@ -1,0 +1,23 @@
+# Device Scan Results (x.x.x.x)
+# Command: nmap -p- -sV -sC x.x.x.x
+# Date: [REDACTED]
+
+Starting Nmap 7.97 ( https://nmap.org )
+Nmap scan report for [DEVICE-7] (x.x.x.x)
+Host is up (latency redacted).
+Not shown: 65532 closed tcp ports (conn-refused)
+
+PORT    STATE    SERVICE    VERSION
+53/tcp  open     domain     DNS service
+80/tcp  open     http       Web interface
+111/tcp filtered rpcbind    
+443/tcp open     https      Secure web interface
+
+Service detection performed. Please report any incorrect results.
+Nmap done: 1 IP address (1 host up) scanned in [REDACTED] seconds
+
+# Security Notes:
+# - Web management interface accessible on both HTTP and HTTPS
+# - DNS service exposed (common for network devices)
+# - RPC service filtered (good security practice)
+# - No obvious vulnerabilities in default NSE scripts 

@@ -1,0 +1,1 @@
+nmap -sn xxx.xxx.x.0/24  
